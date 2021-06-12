@@ -1,0 +1,14 @@
+img,
+embed,
+object,
+video {
+    max-width: 100%;
+}
+
+@media (max-width: 767px) {
+    .copyright,
+    .social {
+        grid-column: span 3;
+        justify-self: center;
+    }
+}

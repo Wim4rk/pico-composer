@@ -1,0 +1,26 @@
+@import '../../node_modules/normalize.css/normalize';
+@import 'mixins';
+@import 'nav';
+@import 'responsive';
+
+img:not([alt]) {
+    outline: 4px $first-contrast dashed !important;
+}
+
+.embed-container {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

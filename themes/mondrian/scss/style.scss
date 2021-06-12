@@ -1,0 +1,82 @@
+@import '../../shared/fontawesome/scss/fontawesome';
+
+$fa-font-path: '../../shared/fontawesome/webfonts';
+
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import 'variables';
+@import 'colors';
+
+@import '../../shared/scss/base';
+@import '../../shared/scss/tables';
+
+@import 'layout';
+
+// Typography:
+@import 'typography';
+
+//Report page
+@import 'report';
+
+// Mondrian
+@import 'mondrian';
+
+html {
+    background-color: $html-bg-color;
+}
+
+body {
+    height: 100%;
+    background-color: $body-bg-color;
+    color: $body-color;
+}
+
+.siteheader a,
+.siteheader a:visited,
+.contant-aside a,
+.content-aside a:visitied {
+    color: $link-visited;
+}
+
+/* Footer */
+
+.site-footer a {
+    color: $greyed;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.copyright {
+    color: $greyed;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.fas,
+.fab {
+    color: $greyed !important;
+    margin: 0.5vw;
+}
+
+figure {
+    float: right;
+    width: 20em;
+    margin: 1em 0 1em 1em;
+    padding: 1em;
+    background-color: $yellow;
+    overflow: auto;
+    border: 1em solid $body-bg-color;
+}
+
+img {
+    width: 100%;
+}
+
+table {
+    width: 75%;
+    margin: 0 auto;
+}

@@ -1,0 +1,342 @@
+/*!
+ * __IBM 3279__
+ * A dark theme for Kmom04.
+ *
+ * This stylesheet is for the design course and kmom04.
+ * IBM 3279 was IBM's first color terminal
+ */
+@import '../../shared/fontawesome/scss/fontawesome';
+
+$fa-font-path: '../../shared/fontawesome/webfonts';
+
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import 'variables';
+@import 'colors';
+
+@import '../../shared/scss/base';
+@import '../../shared/scss/tables';
+
+@import 'report';
+
+
+
+// Adapt the typography
+$font-family: Inconsolata, 'Courier New', Courier, monospace;
+
+$header-font-family: Frutiger, 'Frutiger Linotype', Univers, Calibri,
+'Gill Sans', 'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed',
+'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue', Helvetica,
+Arial, sans-serif;
+
+$code-font-family: 'Courier New', Courier, monospace;
+
+
+// Set the colours
+$html-bg-color: #000;
+$body-bg-color: #000;
+$body-color: rgba(100, 255, 100, 1);
+$line-color: $body-color;
+$code-color: #000;
+$code-bg-color: $greyed;
+$code-border-color: $body-color;
+
+// unvisited link
+$link-color: $body-color;
+
+//visited link
+$link-visited: $body-color;
+
+//mouse over link
+$link-hover: $greyed;
+
+//selected link
+$link-selected: #fff;
+
+$kmom-box-color: rgba(100, 255, 100, 0.5);
+
+$a: 100px;
+
+// Graphics
+body {
+    background-color: $body-bg-color;
+    background-image: radial-gradient(rgba(0, 150, 0, 0.3), #000 120%);
+    margin: 0;
+    text-shadow: 0 0 3px #c8c8c8;
+    background-attachment: fixed;
+
+    &::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: repeating-linear-gradient(0deg, rgba(#000, 0.15), rgba(#000, 0.15) 1px, transparent 1px, transparent 2px);
+        background-attachment: fixed;
+        pointer-events: none;
+    }
+}
+
+.mondrian {
+    max-width: 1035px;
+}
+
+.mondrian ul {
+    display: grid;
+    gap: $gap-width;
+    grid-template-columns: repeat(auto-fill, minmax($a, 1fr));
+    grid-auto-rows: $a;
+    grid-auto-flow: dense;
+
+    background-color: inherit;
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0;
+}
+
+.mondrian li {
+    padding: 1em;
+}
+
+.w1 {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.r1 {
+    grid-column: span 6;
+    grid-row: span 6;
+}
+
+.w2 {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.b1 {
+    grid-column: span 2;
+    grid-row: span 2;
+    padding: 0;
+}
+
+.w3 {
+    grid-column: span 5;
+    grid-row: span 2;
+}
+
+.w4 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.y1 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+a {
+    text-decoration: underline;
+    color: $body-color;
+}
+
+a:hover {
+    color: $link-hover;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.side-nav {
+    ul {
+        display: inherit;
+        text-align: left;
+        background-color: inherit;
+        list-style-type: none;
+        list-style-position: outside;
+        padding: 0;
+    }
+
+    li {
+        display: block;
+        padding: 0;
+        color: $body-color;
+    }
+
+    a {
+        text-decoration: none;
+        color: $body-color;
+    }
+
+    a:hover {
+        color: $greyed;
+    }
+}
+
+.nav ul {
+
+    display: flex;
+    justify-content: flex-end;
+    background-color: inherit;
+
+
+    li {
+        display: inline-block;
+        margin-left: 1em;
+        padding: 0;
+        font-weight: bold;
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $greyed;
+        text-decoration: none;
+    }
+}
+
+table {
+    width: 70%;
+    margin: 0 auto;
+
+    th {
+        color: $body-bg-color;
+        background-color: $body-color;
+    }
+
+}
+
+tr:nth-child(even) {
+    background-color: rgba(100, 255, 100, 0.1);
+}
+
+tr:hover {
+    background-color: rgba(100, 255, 100, 0.2);
+}
+
+code,
+kbd,
+samp,
+var {
+    color: $body-color;
+    background: rgba(110, 255, 110, 0.3);
+    border: 1px solid $body-color;
+}
+
+::selection {
+    color: $body-bg-color;
+    background: $body-color;
+    text-shadow: none;
+}
+
+figure img,
+.flash-region img {
+    filter: grayscale(100%);
+    min-height: 100%;
+    background-size: cover;
+    background-position-x: center;
+}
+
+figcaption {
+    font-style: normal;
+    letter-spacing: 0.5em;
+}
+
+img {
+    width: 100%;
+    opacity: 0.4;
+}
+
+.site-footer a {
+    color: $greyed;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.copyright {
+    color: $greyed;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.kmom-box {
+    // padding: 1em;
+    grid-column: span 1;
+    border: 3px dashed  $kmom-box-color;
+
+    a {
+        color: $body-color;
+    }
+
+    a:hover {
+        color: $link-hover;
+    }
+
+    .kmom-header {
+        background-color: transparent;
+        border-bottom: 3px dashed $kmom-box-color;
+    }
+
+    .kb-content {
+        color: inherit;
+    }
+}
+
+.project {
+    grid-column: 2 / span 1;
+}
+
+.white {
+    background-color: transparent;
+    border: 2px dashed $body-color;
+}
+
+.red {
+    background-color: #196619;
+}
+
+.blue {
+    background-color: #3c3;
+}
+
+.yellow {
+    background-color: #99e699;
+}
+
+.social a {
+    color: $greyed;
+}
+
+.mon-soc {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: right;
+
+    a {
+        margin: 0 0.5vw;
+    }
+}
+
+.mon-copy {
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+}
+
+@import 'layout';
+
+// Typography:
+@import 'typography';
+
+@import 'media-queries';

@@ -1,0 +1,234 @@
+// Mondrian SASS-file
+
+body {
+    padding: 0;
+}
+
+.mondrian {
+    max-width: 1027px;
+    background-color: $body-bg-color;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.site-header {
+    padding: 0;
+    margin: 0;
+
+    a {
+        color: $white;
+    }
+
+    a:hover {
+        color: $yellow;
+    }
+
+    .container {
+        margin: 0;
+        padding-bottom: 0;
+        display: grid;
+        grid-template-columns: 2 * $a auto;
+        gap: $gap-width;
+    }
+}
+
+.placeholder {
+    background-color: $blue;
+}
+
+.main {
+    background-color: $white;
+    margin: 0 1em;
+}
+
+.white {
+    background-color: $white;
+}
+
+.red {
+    background-color: $red;
+    color: #fff;
+}
+
+.blue {
+    background-color: $blue;
+}
+
+.yellow {
+    background-color: $yellow;
+}
+
+.mondrian ul {
+    display: grid;
+    gap: $gap-width;
+    grid-template-columns: repeat(auto-fill, minmax($a, 1fr));
+    grid-auto-rows: $a;
+    grid-auto-flow: dense;
+
+    background-color: $body-bg-color;
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0;
+    margin: 0;
+}
+
+.mondrian li {
+    padding: 1em;
+}
+
+.w1 {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.r1 {
+    grid-column: span 6;
+    grid-row: span 6;
+}
+
+.w2 {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.b1 {
+    grid-column: span 2;
+    grid-row: span 2;
+    padding: 0;
+    color: $white;
+}
+
+.w3 {
+    grid-column: span 5;
+    grid-row: span 2;
+}
+
+.w4 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.y1 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.side-nav {
+    padding: $gap-width;
+
+    ul {
+        text-align: left;
+        display: inherit;
+        background-color: inherit;
+        list-style-type: none;
+        list-style-position: outside;
+        padding: 0;
+    }
+
+    li {
+        display: block;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: $second-contrast;
+    }
+
+    a:hover {
+        color: $first-contrast;
+    }
+}
+
+.nav-holder {
+    background-color: $first-contrast;
+    padding: $gap-width;
+}
+
+.right {
+    margin-left: 1em;
+    border-right: 0;
+    margin-right: -1em;
+}
+
+.left {
+    margin-right: 1em;
+    border-left: 0;
+    margin-left: -1em;
+}
+
+.nav {
+    background-color: $first-contrast;
+    padding: 3em 1em;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        background-color: inherit;
+    }
+
+    li {
+        display: inline-block;
+        margin-left: 1em;
+        padding: 0;
+        font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+.nav-toggle {
+    background-color: $first-contrast;
+}
+
+.container ul {
+    background-color: inherit;
+    display: block;
+
+    li {
+        padding: 0;
+    }
+}
+
+.landingpage {
+    margin-top: 1em;
+}
+
+.kmom-header {
+    a:hover {
+        color: $third-contrast;
+    }
+}
+
+.kmom-box {
+    a {
+        color: $body-color;
+    }
+}
+
+.kmom-wrapper {
+    margin-top: 1em;
+}
+
+.footer {
+    background-color: $second-contrast;
+    margin-top: 1em;
+}
+
+.mon-soc {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: right;
+}
+
+.mon-copy {
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+}
+
+@import 'media-queries';

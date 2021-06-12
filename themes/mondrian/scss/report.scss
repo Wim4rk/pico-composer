@@ -1,0 +1,145 @@
+.landingpage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    padding: 1em;
+}
+
+.landingpage h1 {
+    grid-column: span 3;
+    justify-self: center;
+}
+
+.kmom-wrapper {
+    display: grid;
+    grid-template-columns: 2 * $a auto;
+    gap: $gap-width;
+}
+
+.kmom-container {
+    grid-column: 2;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.content-aside {
+    // order: 1;
+    grid-column: 1;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li {
+        display: block;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.kmom-box {
+    grid-column: span 1;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid  $kmom-box-color;
+
+    .kb-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        color: $body-color;
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    h2 {
+        margin: 0;
+        line-height: 1em;
+    }
+
+    a {
+        text-decoration: $link-decoration;
+        color: $link-color;
+        z-index: 2;
+    }
+
+    a:hover {
+        color: $link-hover;
+        text-decoration: $link-hover-decoration;
+    }
+
+    .kmom-header {
+        // grid-column: span 2;
+        background-color: $kmom-box-color;
+        padding: 1em;
+    }
+
+    .condenced {
+        padding: 1em;
+    }
+}
+
+.project {
+    grid-column: span 3;
+}
+
+.palette {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+
+    .color {
+        width: 4em;
+        text-align: center;
+        padding: 2em;
+        border: 2px solid $body-color;
+        margin: 0.2em;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .landing-page h1,
+    .landing-page.project,
+    .kmom-box {
+        grid-column: span 3;
+    }
+
+    .kmom-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .kmom-container {
+        order: 1;
+        grid-column: span 3;
+    }
+
+    .content-aside {
+        order: 2;
+        grid-column: span 3;
+
+        ul li {
+            display: block;
+            margin: 0;
+        }
+    }
+}

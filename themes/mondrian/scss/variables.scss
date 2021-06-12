@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=Limelight&display=swap');
+
+$site-max-width: 48em;
+
+$magic-number: 28px;
+$fontsize-body: 16px;
+$lineheight: $magic-number / $fontsize-body;
+
+$gap-width: 1rem;
+
+$font-family: 'Exo', sans-serif;
+// $font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+// $header-font-family: 'Expletus Sans', sans-serif;
+// $header-font-family: 'Montserrat Subrayada', sans-serif;
+$header-font-family: 'Limelight', cursive;
+$code-font-family: Inconsolata, 'Courier New', Courier, monospace;
+
+$a: 100px;

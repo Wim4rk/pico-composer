@@ -1,2 +1,4 @@
 # You should add themes installed by Composer here
 /default
+
+node_modules

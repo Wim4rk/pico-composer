@@ -1,0 +1,33 @@
+$html-bg-color: rgba(255, 255, 204, 0.6);
+$body-bg-color: #1a1a1a;
+
+
+$white: #e7e8e3;
+
+$red: #df281e;
+$blue: #015a9e;
+$yellow: #ead86a;
+
+//Text color
+
+$body-color: #1a1a1a;
+$greyed: #aaa;
+
+$first-contrast: $red;
+$second-contrast: $blue;
+$third-contrast: $yellow;
+
+// Code
+$code-color: $body-color;
+$code-bg-color: $third-contrast;
+$code-border-color: $body-color;
+
+//Links
+$link-color: $first-contrast;
+$link-visited: $first-contrast;
+$link-hover: $second-contrast;
+$link-selected: $greyed;
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+$kmom-box-color: $second-contrast;

@@ -1,0 +1,26 @@
+// Tables SCSS
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+table,
+th,
+td {
+    border: 1px solid $body-color;
+}
+
+th {
+    background-color: $second-contrast;
+}
+
+tr:nth-child(even) {
+    background-color: $greyed;
+}
+
+tr:hover {
+    background-color: $third-contrast;
+}

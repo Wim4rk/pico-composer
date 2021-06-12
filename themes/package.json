@@ -1,0 +1,24 @@
+{
+  "name": "themes",
+  "version": "1.0.0",
+  "description": "Tests for dbwebb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "stylelint \"**/*.scss\"",
+    "mondrian": "sass mondrian/scss/style.scss mondrian/css/style.min.css --watch --no-source-map --style compressed",
+    "dark": "sass mondrian/scss/style-dark.scss mondrian/css/style-dark.min.css --no-source-map --style compressed"
+  },
+  "keywords": [],
+  "author": "Olov Wimark",
+  "license": "ISC",
+  "devDependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.29.0",
+    "stylelint": "^13.7.2",
+    "stylelint-config-sass-guidelines": "^7.1.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1"
+  }
+}
