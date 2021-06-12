@@ -4,7 +4,7 @@ $site-max-width: 48em;
 
 $magic-number: 28px;
 $fontsize-body: 16px;
-$lineheight: $magic-number / $fontsize-body;
+$lineheight: math.div($magic-number, $fontsize-body);
 
 $gap-width: 1rem;
 

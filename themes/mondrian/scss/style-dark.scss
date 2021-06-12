@@ -1,10 +1,11 @@
 /*!
  * __IBM 3279__
- * A dark theme for Kmom04.
+ * A dark theme for Wim4rk.
  *
- * This stylesheet is for the design course and kmom04.
  * IBM 3279 was IBM's first color terminal
  */
+@use 'sass:math';
+
 @import '../../shared/fontawesome/scss/fontawesome';
 
 $fa-font-path: '../../shared/fontawesome/webfonts';
