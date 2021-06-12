@@ -1,7 +1,8 @@
 ---
-Title: Jag
+Title: Me
 Description: Presentation page.
 Template: me
+Hidden: true
 ---
 
 # Jag och design

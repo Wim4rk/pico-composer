@@ -1,5 +1,5 @@
 ---
-Title: Hem
+Title: Home
 Description: Splash-page
 Template: index
 ---

@@ -2,6 +2,7 @@
 Title: Laddtider
 Description: Analys av laddtider
 Template: me
+Hidden: true
 ---
 # Laddtider på tre myndigheters hemsidor
 

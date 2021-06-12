@@ -2,11 +2,12 @@
 Title: Färganalys
 Description: Analys av färgval på klassiska orkestrars hemsidor
 Template: me
+Hidden: true
 ---
 # Färgval på stora orkestrars hemsidor
 
 En kort analys av hemsidorna för fem av Sveriges stora orkestrar.
-    
+
 ## Urval
 
 Jag har valt att titta på hemsidorna för Kungliga Operan, Sveriges Radios symfoniorkester, Malmö symfoniorkester, Göteborgs Symfoniker och Kungliga Filharmonikerna

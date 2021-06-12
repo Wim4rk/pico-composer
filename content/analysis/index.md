@@ -2,6 +2,7 @@
 Title: Rapporter
 Description: Kursrapporter
 Template: report
+Hidden: true
 ---
 
 # Rapporter

@@ -2,6 +2,7 @@
 Title: Redovisning
 Description: The course report page
 Template: report
+Hidden: true
 ---
 
 # Redovisning

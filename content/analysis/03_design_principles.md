@@ -2,6 +2,7 @@
 Title: Designprinciper
 Description: Analys av tillgänglighet
 Template: me
+Hidden: true
 ---
 
 # Designprinciper enligt James Bond
