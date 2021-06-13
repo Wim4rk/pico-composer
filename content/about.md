@@ -1,9 +1,11 @@
 ---
 Title: About
 Description: About-page
-Template: me
+Template: article
 ---
 
 # About
 
-Much ado 'bout nothing.
+These are the pages on wich I intend to write my purpose.
+
+The reason why anyone of us is put on this planet, is to help one another.

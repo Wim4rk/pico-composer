@@ -6,4 +6,5 @@ Template: index
 
 # Wim4rk
 
-What is in a name?
+Currently waiting for some help from my web-hotel to change a few server
+settings. Should be up and running soon.
