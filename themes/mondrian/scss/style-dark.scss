@@ -138,6 +138,15 @@ body {
     grid-column: span 1;
 }
 
+.article-content {
+    border-style: dashed;
+    padding: 1rem 20%;
+}
+
+main .container {
+    margin: 0;
+}
+
 a {
     text-decoration: underline;
     color: $body-color;
