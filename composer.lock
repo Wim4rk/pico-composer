@@ -58,23 +58,20 @@
         },
         {
             "name": "erusev/parsedown-extra",
-            "version": "0.8.0-beta-1",
+            "version": "0.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown-extra.git",
-                "reference": "e756b1bf8642ab1091403e902b0503f1cec7527d"
+                "reference": "91ac3ff98f0cea243bdccc688df43810f044dcef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown-extra/zipball/e756b1bf8642ab1091403e902b0503f1cec7527d",
-                "reference": "e756b1bf8642ab1091403e902b0503f1cec7527d",
+                "url": "https://api.github.com/repos/erusev/parsedown-extra/zipball/91ac3ff98f0cea243bdccc688df43810f044dcef",
+                "reference": "91ac3ff98f0cea243bdccc688df43810f044dcef",
                 "shasum": ""
             },
             "require": {
-                "erusev/parsedown": "^1.8.0|^1.8.0-beta-4",
-                "ext-dom": "*",
-                "ext-mbstring": "*",
-                "php": ">=5.3.6"
+                "erusev/parsedown": "^1.7.4"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35"
@@ -106,9 +103,9 @@
             ],
             "support": {
                 "issues": "https://github.com/erusev/parsedown-extra/issues",
-                "source": "https://github.com/erusev/parsedown-extra/tree/master"
+                "source": "https://github.com/erusev/parsedown-extra/tree/0.8.x"
             },
-            "time": "2018-05-08T21:54:32+00:00"
+            "time": "2019-12-30T23:20:37+00:00"
         },
         {
             "name": "picocms/composer-installer",
@@ -173,22 +170,21 @@
         },
         {
             "name": "picocms/pico",
-            "version": "v2.1.4",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/picocms/Pico.git",
-                "reference": "7228129cade3f812f22904b503c939b04a75c9dd"
+                "reference": "232a90bdf8dac5c2710c1a4b27a397bf28f9a75c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/picocms/Pico/zipball/7228129cade3f812f22904b503c939b04a75c9dd",
-                "reference": "7228129cade3f812f22904b503c939b04a75c9dd",
+                "url": "https://api.github.com/repos/picocms/Pico/zipball/232a90bdf8dac5c2710c1a4b27a397bf28f9a75c",
+                "reference": "232a90bdf8dac5c2710c1a4b27a397bf28f9a75c",
                 "shasum": ""
             },
             "require": {
-                "erusev/parsedown": "1.8.0-beta-7",
-                "erusev/parsedown-extra": "0.8.0-beta-1",
-                "ext-mbstring": "*",
+                "erusev/parsedown": "~1.8.0|1.8.0@beta",
+                "erusev/parsedown-extra": "~0.8.0|0.8.0@beta",
                 "php": ">=5.3.6",
                 "symfony/yaml": "^2.8",
                 "twig/twig": "^1.36"
@@ -201,8 +197,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev",
-                    "dev-pico-3.0": "3.0.x-dev"
+                    "dev-master": "2.0.x-dev",
+                    "dev-pico-2.1": "2.1.x-dev"
                 }
             },
             "autoload": {
@@ -258,26 +254,20 @@
                 "issues": "https://github.com/picocms/Pico/issues",
                 "source": "https://github.com/picocms/Pico"
             },
-            "funding": [
-                {
-                    "url": "https://www.bountysource.com/teams/picocms",
-                    "type": "custom"
-                }
-            ],
-            "time": "2020-08-29T14:15:52+00:00"
+            "time": "2019-11-24T23:43:58+00:00"
         },
         {
             "name": "picocms/pico-deprecated",
-            "version": "v2.1.4",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/picocms/pico-deprecated.git",
-                "reference": "8d1a4056ecc71cc2857e91d50bcb38db91d424e0"
+                "reference": "8693b27f906a982409a520a41710bb5c95218882"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/picocms/pico-deprecated/zipball/8d1a4056ecc71cc2857e91d50bcb38db91d424e0",
-                "reference": "8d1a4056ecc71cc2857e91d50bcb38db91d424e0",
+                "url": "https://api.github.com/repos/picocms/pico-deprecated/zipball/8693b27f906a982409a520a41710bb5c95218882",
+                "reference": "8693b27f906a982409a520a41710bb5c95218882",
                 "shasum": ""
             },
             "require": {
@@ -287,8 +277,8 @@
             "type": "pico-plugin",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev",
-                    "dev-pico-3.0": "3.0.x-dev"
+                    "dev-master": "2.0.x-dev",
+                    "dev-pico-2.1": "2.1.x-dev"
                 }
             },
             "autoload": {
@@ -332,20 +322,20 @@
                 "issues": "https://github.com/picocms/pico-deprecated/issues",
                 "source": "https://github.com/picocms/pico-deprecated"
             },
-            "time": "2020-08-29T15:11:07+00:00"
+            "time": "2019-11-24T22:24:53+00:00"
         },
         {
             "name": "picocms/pico-theme",
-            "version": "v2.1.4",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/picocms/pico-theme.git",
-                "reference": "d4ec8df28356f1e034a97d37327b9aecb3129eed"
+                "reference": "53a90f720917d32ae857f3ddf7eea5aae6b3759c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/picocms/pico-theme/zipball/d4ec8df28356f1e034a97d37327b9aecb3129eed",
-                "reference": "d4ec8df28356f1e034a97d37327b9aecb3129eed",
+                "url": "https://api.github.com/repos/picocms/pico-theme/zipball/53a90f720917d32ae857f3ddf7eea5aae6b3759c",
+                "reference": "53a90f720917d32ae857f3ddf7eea5aae6b3759c",
                 "shasum": ""
             },
             "require": {
@@ -355,8 +345,8 @@
             "extra": {
                 "installer-name": "default",
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev",
-                    "dev-pico-3.0": "3.0.x-dev"
+                    "dev-master": "2.0.x-dev",
+                    "dev-pico-2.1": "2.1.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -392,7 +382,7 @@
                 "issues": "https://github.com/picocms/pico-theme/issues",
                 "source": "https://github.com/picocms/pico-theme"
             },
-            "time": "2020-08-29T15:11:43+00:00"
+            "time": "2019-11-24T22:25:33+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -613,5 +603,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }

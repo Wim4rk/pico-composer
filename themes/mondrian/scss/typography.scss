@@ -39,7 +39,8 @@ ul {
 }
 
 li p,
-li h1 {
+li h1,
+li h2 {
     margin-left: 1rem;
 }
 
@@ -60,7 +61,7 @@ var {
     padding: 0 0.2em;
 }
 
-code {
+.block {
     display: block;
     white-space: pre-wrap;
 }

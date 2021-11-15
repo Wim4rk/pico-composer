@@ -138,13 +138,14 @@ body {
     grid-column: span 1;
 }
 
-.article-content {
-    border-style: 1px dashed;
-    padding: 1rem 20%;
-}
-
 main .container {
     margin: 0;
+}
+
+.article-content {
+    border: 2px dashed;
+    padding: 1rem 20%;
+    margin-left: 0.5rem !important;
 }
 
 a {
